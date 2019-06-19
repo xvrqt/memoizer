@@ -16,7 +16,8 @@ use std::hash::Hash;
 /// # Examples
 ///
 /// ```
-/// let mut calc = memoizer::Memoizer::new(|n| { n + 3 });
+///# use memoizer::Memoizer;
+/// let mut calc = Memoizer::new(|n| { n + 3 });
 /// assert_eq!(6, calc.value(3));
 /// assert_eq!(6, calc.value(3));
 /// ```
@@ -42,7 +43,8 @@ where
 	/// # Examples
 	///
 	/// ```
-	/// let mut add_two = memoizer::Memoizer::new(|n| {
+	///# use memoizer::Memoizer;
+	/// let mut add_two = Memoizer::new(|n| {
 	///		n + 2
 	///	});
 	/// assert_eq!(4, add_two.value(2));
@@ -61,6 +63,7 @@ where
 	///
 	/// ```
 	///
+	///# use memoizer::Memoizer;
 	/// #[derive(Debug, Clone, Hash)]
 	///	 struct Dummy {
 	///	     pub id: usize,
@@ -80,7 +83,7 @@ where
     ///     id: 1,
     ///     word: String::from("girls"),
     /// };
-    /// let mut calc = memoizer::Memoizer::new(|d: &Dummy| d.id + d.word.len());
+    /// let mut calc = Memoizer::new(|d: &Dummy| d.id + d.word.len());
     ///
     ///  assert_eq!(6, calc.value(&d));
     ///  assert_eq!(6, calc.value(&d));
