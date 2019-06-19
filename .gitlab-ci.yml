@@ -3,7 +3,7 @@ stages:
     - test
     - deploy
 
-image: rust:1.35
+image: rust
 
 build:
   stage: build
