@@ -24,7 +24,8 @@ deploy_production:
   tags:
     - docker
   script:
-    - 
+    - cargo login $CRATES_KEY
+    - cargo publish
   when: manual
   only:
-  - tags
+    - tags
