@@ -1,0 +1,30 @@
+stages:
+    - build
+    - test
+    - deploy
+
+image: rust:1.31
+
+build:
+  stage: build
+  tags:
+    - docker
+  script:
+    - cargo build --release
+      
+test:
+  stage: test
+  tags:
+    - docker
+  script:
+    - cargo test
+
+deploy_production:
+  stage: deploy
+  tags:
+    - docker
+  script:
+    - 
+  when: manual
+  only:
+  - tags
