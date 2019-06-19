@@ -5,8 +5,10 @@ authors = ["Amy Jie <git.xvrqt.com>"]
 edition = "2018"
 repository = "https://git.xvrqt.com/amy/memoizer.git"
 homepage = "https://git.xvrqt.com/amy/memoizer"
-license = "MIT"
+license = "BSD-3"
 readme = "README.md"
 description = "Simple function memoization struct."
+keywords = ["memoization", "cache", "struct", "xvrqt"]
+categories = ["cache", "caching", "xvrqt"]
 
 [dependencies]
