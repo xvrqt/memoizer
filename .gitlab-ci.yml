@@ -3,7 +3,7 @@ stages:
     - test
     - deploy
 
-image: rust
+image: rust:latest
 
 build:
   stage: build
