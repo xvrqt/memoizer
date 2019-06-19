@@ -180,14 +180,14 @@ mod tests {
     	*/
     	let mut calculated_v = calc.value(v);
     	let assert_v = vec![3,2,1,1,2,3];
-    	for (i, e ) in calculated_v.iter().enumerate() {
+    	for (i, _) in calculated_v.iter().enumerate() {
     		assert_eq!(calculated_v[i], assert_v[i]);
     	}
 
         // Mutate the return vector to make sure it is not changing the map's value
     	calculated_v[0] = 23;
     	let calculated_v = calc.value(v2);
-    	for (i, e ) in calculated_v.iter().enumerate() {
+    	for (i, _) in calculated_v.iter().enumerate() {
     		assert_eq!(calculated_v[i], assert_v[i]);
     	}
     }
