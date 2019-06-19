@@ -12,15 +12,6 @@ use std::collections::HashMap;
 use std::hash::Hash;
 
 /// The eponymous struct. Can only memoize function that takes a single argument and returns a single value, if you need more than this, you can use vectors, arrays or structs of your own to pass in more than one value.
-/// 
-/// # Examples
-///
-/// ```
-///# use memoizer::Memoizer;
-/// let mut calc = Memoizer::new(|n| { n + 3 });
-/// assert_eq!(6, calc.value(3));
-/// assert_eq!(6, calc.value(3));
-/// ```
 #[derive(Debug)]
 pub struct Memoizer<U, V, F>
 where
@@ -77,7 +68,7 @@ where
 	///	     }
 	///	 }
 	///
-	///	 impl Eq for Dummy {}
+	///	impl Eq for Dummy {}
 	///
 	/// let d = Dummy {
     ///     id: 1,

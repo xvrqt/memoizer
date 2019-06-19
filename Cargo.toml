@@ -1,6 +1,6 @@
 [package]
 name = "memoizer"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Amy Jie <git.xvrqt.com>"]
 edition = "2018"
 repository = "https://git.xvrqt.com/amy/memoizer.git"
