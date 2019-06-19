@@ -16,10 +16,13 @@ test:
   stage: test
   tags:
     - docker
+  before_script:
+    - rustup component add clippy
   script:
+    - cargo clippy
     - cargo test
 
-deploy_production:
+deploy:
   stage: deploy
   tags:
     - docker

@@ -89,6 +89,7 @@ where
     ///  assert_eq!(6, calc.value(&d));
 	/// ```
 	///
+	#[allow(clippy::or_fun_call)]
     pub fn value(&mut self, arg: U) -> V {
         let key = arg.clone();
         self.map.entry(key).or_insert((self.function)(arg)).clone()
