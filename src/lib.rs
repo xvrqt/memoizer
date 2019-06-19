@@ -60,6 +60,8 @@ where
 	/// # Examples
 	///
 	/// ```
+	/// use memoizer;
+	///
 	/// #[derive(Debug, Clone, Hash)]
 	///	 struct Dummy {
 	///	     pub id: usize,
