@@ -9,7 +9,7 @@ memoize = "0.2.0"
 ```
 
 Add the following to your main/lib.rs:
-```Rust
+```rust
 use memoizer::Memoizer;
 
 fn main() {
@@ -24,7 +24,7 @@ fn main() {
 }   
 ```
 This prints:
-```rust
+```bash
 Fuction Called!
 1
 1
