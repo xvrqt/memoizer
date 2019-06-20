@@ -34,7 +34,7 @@ Fuction Called!
 
 ## Trivial Expensive Function
 The `difficult(n: usize)` function simulates a computationally expensive function. It taks about a 20th of a second to run and returns nothing. When called 500 times with random inputs (limited [0,9))it takes about ~2.5 seconds. When using the Memoizer struct it takes ~0.05 seconds.
-```Rust
+```rust
 use std::thread::sleep;
 use std::time::{Duration, Instant};
 
@@ -77,7 +77,7 @@ The return value must implement the Clone trait so that the value in the HashMap
 
 Here's an example using a struct as the input parameter and returning a number.
 
-```Rust
+```rust
 use memoizer::Memoizer;
 
 /* Dummy struct to test more complex inputs/returns */
