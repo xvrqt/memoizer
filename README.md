@@ -18,19 +18,16 @@ fn main() {
         n + 1
     });
 
-    /* Prints:
-     * >Function Called!
-     * >1
-    */
+    
     println!("{}", increment.value(0));
-    /* The result of calling the function with '0' is memoized so the function 
-     * is not called again.
-     *
-     * Prints:
-     * >1
-    */
     println!("{}", increment.value(0));
 }   
+```
+This prints:
+```rust
+Fuction Called!
+1
+1
 ```
 
 # Examples
