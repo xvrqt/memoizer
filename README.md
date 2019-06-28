@@ -5,7 +5,7 @@ This struct allows you to memoize the results of a deterministic, pure functions
 Add the following to your Cargo.toml:
 ```TOML
 [dependencies]
-memoize = "0.2.0"
+memoize = "0.2.1"
 ```
 
 Add the following to your main/lib.rs:
