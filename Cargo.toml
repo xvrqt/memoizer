@@ -1,10 +1,10 @@
 [package]
 name = "memoizer"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["Amy Jie <git.xvrqt.com>"]
 edition = "2018"
-repository = "https://git.xvrqt.com/amy/memoizer.git"
-homepage = "https://git.xvrqt.com/amy/memoizer"
+repository = "https://github.com/xvrqt/memoizer.git"
+homepage = "https://github.com/xvrqt/memoizer"
 license = "BSD-3-Clause"
 readme = "README.md"
 description = "Simple function memoization struct."
